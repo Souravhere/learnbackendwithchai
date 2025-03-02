@@ -1,24 +1,29 @@
 import { useEffect, useState } from 'react'
 import './App.css'
+import axios from 'axios';
 
 
 function App() {
-  const [jokes, setjojkes] = useState([])
+  const [jokes, setjokes] = useState([])
   useEffect(() => {
-    fetch('http://localhost:4000/jokes')
-    .then(response => setjojkes(response))
-    
-  })
+    axios.get('/api/jokes')
+    .then((response) => {
+      setjokes(response.data);
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+  }, [])
   return (
     <>
       <h1>Jokes</h1>
       <p>Count of Jokes : {jokes.length}</p>
-      {jokes.map( (jokes, index) => {
+      {jokes.map( (jokes, index) => (
         <div key={jokes.id}>
-          <h1>{setjojkes.title}</h1>
-          <h3>{jokes.body}</h3>
+          <h3>{jokes.title}</h3>
+          <h4>{jokes.body}</h4>
         </div>
-      })}
+      ))}
     </>
   )
 } 
