@@ -1,0 +1,16 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "First project to integrate with frontend and backend ",
+  "main": "index.js",
+  "scripts": {
+    "test": "start"
+  },
+  "keywords": [
+    "backend",
+    "express",
+    "nodejs"
+  ],
+  "author": "sourav chhimpa",
+  "license": "ISC"
+}
