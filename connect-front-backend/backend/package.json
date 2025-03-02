@@ -4,7 +4,7 @@
   "description": "First project to integrate with frontend and backend ",
   "main": "index.js",
   "scripts": {
-    "test": "start"
+    "start": "node index.js"
   },
   "keywords": [
     "backend",
