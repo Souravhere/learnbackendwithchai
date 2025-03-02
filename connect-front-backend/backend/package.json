@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "First project to integrate with frontend and backend ",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "node index.js"
   },
