@@ -7,4 +7,4 @@ const todosSchema = new mongoose.Schema(
     {timestamps:true}
 )
 
-export const Todos = mongoose.model('Todos', todosSchema);
+export const Todo = mongoose.model('Todo ', todosSchema);
