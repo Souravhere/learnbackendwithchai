@@ -12,5 +12,9 @@
     "models"
   ],
   "author": "Sourav Chhimpa",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "mongoose": "^8.11.0"
+  }
 }
