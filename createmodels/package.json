@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Here we will learn how to build a industry levels models for mongoose",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "start"
   },
