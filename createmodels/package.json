@@ -1,0 +1,16 @@
+{
+  "name": "createmodels",
+  "version": "1.0.0",
+  "description": "Here we will learn how to build a industry levels models for mongoose",
+  "main": "index.js",
+  "scripts": {
+    "test": "start"
+  },
+  "keywords": [
+    "express",
+    "mongoose",
+    "models"
+  ],
+  "author": "Sourav Chhimpa",
+  "license": "ISC"
+}
