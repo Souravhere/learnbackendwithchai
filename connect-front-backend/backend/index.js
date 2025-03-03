@@ -37,6 +37,7 @@ app.get("/api/jokes", (req, res) => {
     res.send(jokes);
 });
 
+// here will added the proces.env.PORT when we put ths code in production than will auto get the prort 
 const port = process.env.PORT || 4000;
 
 app.listen( port , () => {
