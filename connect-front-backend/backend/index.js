@@ -6,6 +6,7 @@ app.get('/', (req, res) => {
     res.send('Hello World!');
 })
 
+// here we will use "/api " because in the vite.config.js we have used the "/api" to redirect the request to the backend
 app.get("/api/jokes", (req, res) => {
     const jokes = [
         {
