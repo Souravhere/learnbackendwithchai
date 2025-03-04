@@ -22,7 +22,13 @@ const productsSchema = new mongoose.Schema(
         },
         price:{
             type: Number,
+            default: 0,
             required:true
+        },
+        stock:{
+            type: Number,
+            required: true,
+            default: 0 
         },
         createdBy:{
             type: mongoose.Schema.Types.ObjectId,
