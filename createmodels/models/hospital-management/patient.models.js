@@ -17,6 +17,10 @@ const patientSchema = new mongoose.Schema({
         type: String,
         required:true
     },
+    gender:{
+        type: String,
+        enum: ["Male","Female","Other"]
+    },
     treatmentBy:{
         type: mongoose.Schema.Types.ObjectId,
         ref: "Doctor",
